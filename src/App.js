@@ -10,28 +10,7 @@ const internData = require('./data/intern/data.json');
 const skillTitle = require('./data/skill/title.json');
 const skillData = require('./data/skill/data.json');
 
-const CreateTable = (props) => {
-  return (
-    <table >
-      <tr>
-        {props.title.map(v => (<th>{v}</th>))}
-      </tr>
-      {
-        props.data.map(d => (<tr>
-          {props.title.map(v => {
-            return <td>{d[v].split('\n').map(v => (<span>{v}<br/></span>))}</td>
-          })}
-          </tr>))
-      }
-    </table>
-    );
-}
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Particles className="particles" params={{
+const particlesParam = {
       "particles": {
           "number": {
               "value": 100,
@@ -67,7 +46,30 @@ class App extends Component {
               }
           }
       }
-  }}/>
+  };
+
+const CreateTable = (props) => {
+  return (
+    <table >
+      <tr>
+        {props.title.map(v => (<th>{v}</th>))}
+      </tr>
+      {
+        props.data.map(d => (<tr>
+          {props.title.map(v => {
+            return <td>{d[v].split('\n').map(v => (<span>{v}<br/></span>))}</td>
+          })}
+          </tr>))
+      }
+    </table>
+    );
+}
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Particles className="particles" params={particlesParam}/>
         <ul id="nav">
           <li><a href="#intro">Profile</a></li>
           <li><a href="#history">History</a></li>
