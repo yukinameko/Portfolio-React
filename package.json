@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://yukinameko.github.io/Portfolio-React",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
@@ -8,6 +9,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -23,6 +25,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "react-particles-js": "^2.5.1"
   }
 }

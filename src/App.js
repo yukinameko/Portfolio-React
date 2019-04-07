@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import nameko from './data/image/icon/nameko.png';
 import './App.css';
+
+import nameko from './data/image/icon/nameko.png';
+import Particles from 'react-particles-js';
 
 const internTitle = require('./data/intern/title.json');
 const internData = require('./data/intern/data.json');
@@ -29,6 +31,43 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Particles className="particles" params={{
+      "particles": {
+          "number": {
+              "value": 100,
+              "density": {
+                  "enable": false
+              }
+          },
+          "size": {
+              "value": 10,
+              "random": true
+          },
+          "move": {
+              "direction": "bottom",
+              "out_mode": "out"
+          },
+          "line_linked": {
+              "enable": false
+          },
+          // "color": {
+          //   "value":"#000000"
+          // }
+      },
+      "interactivity": {
+          "events": {
+              "onclick": {
+                  "enable": true,
+                  "mode": "remove"
+              }
+          },
+          "modes": {
+              "remove": {
+                  "particles_nb": 10
+              }
+          }
+      }
+  }}/>
         <ul id="nav">
           <li><a href="#intro">Profile</a></li>
           <li><a href="#history">History</a></li>

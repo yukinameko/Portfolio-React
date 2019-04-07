@@ -17,6 +17,7 @@
 
 .App-header {
   margin: 0px 0px 0px 0px;
+  /*background-color: rgba(0,0,0,0);*/
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -52,6 +53,14 @@ table td, table th {
   to {
     transform: rotate(360deg);
   }
+}
+
+.particles {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
 .contents {
