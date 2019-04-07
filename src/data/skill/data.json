@@ -9,7 +9,7 @@
 		"言語":"JavaScript",
 		"学習期間":"5年",
 		"用途":"Webアプリケーションの開発\nAndroidアプリケーション開発\n画像処理\n普段の簡単な数値計算，解析等",
-		"ライブラリ等":"jQuery\nNode.js\nVue.js\nReact Native\nD3.js"
+		"ライブラリ等":"jQuery\nNode.js\nVue.js\nReact.js\nReact Native\nthree.js"
 	},
 	{
 		"言語":"C#",
@@ -27,7 +27,7 @@
 		"言語":"Python",
 		"学習期間":"3年",
 		"用途":"数値解析\n画像処理\n機械学習\nDeep Learning\n",
-		"ライブラリ等":"matplotlib\nopencv\nChainer等"
+		"ライブラリ等":"matplotlib\nopencv\nChainer\ntensorflow等"
 	},
 	{
 		"言語":"Java",
@@ -39,6 +39,6 @@
 		"言語":"Swift",
 		"学習期間":"半年",
 		"用途":"iOSアプリ開発\n機械学習",
-		"ライブラリ等":"iOS-Charts等"
+		"ライブラリ等":"iOS-Charts\nAccelarate等"
 	}
 ]
