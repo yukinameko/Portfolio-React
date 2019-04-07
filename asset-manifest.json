@@ -1,15 +1,22 @@
 {
-  "main.css": "/Portfolio-React/static/css/main.69bd7de2.chunk.css",
-  "main.js": "/Portfolio-React/static/js/main.ba52493a.chunk.js",
-  "main.js.map": "/Portfolio-React/static/js/main.ba52493a.chunk.js.map",
+  "main.css": "/Portfolio-React/static/css/main.1d0c354d.chunk.css",
+  "main.js": "/Portfolio-React/static/js/main.c2629621.chunk.js",
+  "main.js.map": "/Portfolio-React/static/js/main.c2629621.chunk.js.map",
   "runtime~main.js": "/Portfolio-React/static/js/runtime~main.ee84cd26.js",
   "runtime~main.js.map": "/Portfolio-React/static/js/runtime~main.ee84cd26.js.map",
   "static/js/2.58798efc.chunk.js": "/Portfolio-React/static/js/2.58798efc.chunk.js",
   "static/js/2.58798efc.chunk.js.map": "/Portfolio-React/static/js/2.58798efc.chunk.js.map",
   "index.html": "/Portfolio-React/index.html",
-  "precache-manifest.553ab3c521c0ce7ae36f843da8b2a118.js": "/Portfolio-React/precache-manifest.553ab3c521c0ce7ae36f843da8b2a118.js",
+  "precache-manifest.086f9a04239a36263ea1f34b207a3ae8.js": "/Portfolio-React/precache-manifest.086f9a04239a36263ea1f34b207a3ae8.js",
   "service-worker.js": "/Portfolio-React/service-worker.js",
-  "static/css/main.69bd7de2.chunk.css.map": "/Portfolio-React/static/css/main.69bd7de2.chunk.css.map",
+  "static/css/main.1d0c354d.chunk.css.map": "/Portfolio-React/static/css/main.1d0c354d.chunk.css.map",
+  "static/media/FOT.JPG": "/Portfolio-React/static/media/FOT.400f1652.JPG",
+  "static/media/e-zuka-ai.png": "/Portfolio-React/static/media/e-zuka-ai.a7305ae4.png",
+  "static/media/e-zuka-error.png": "/Portfolio-React/static/media/e-zuka-error.71532966.png",
+  "static/media/e-zuka.png": "/Portfolio-React/static/media/e-zuka.c751daeb.png",
+  "static/media/i-channel.png": "/Portfolio-React/static/media/i-channel.8d7643d1.png",
+  "static/media/iOZ.png": "/Portfolio-React/static/media/iOZ.d6db5e11.png",
   "static/media/logo.svg": "/Portfolio-React/static/media/logo.5d5d9eef.svg",
-  "static/media/nameko.png": "/Portfolio-React/static/media/nameko.effccc7e.png"
+  "static/media/nameko.png": "/Portfolio-React/static/media/nameko.effccc7e.png",
+  "static/media/sche.png": "/Portfolio-React/static/media/sche.2da55941.png"
 }
