@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #000;
 }
 
 .Background-App-logo {
@@ -32,6 +33,16 @@
 .App-header h1 {
   width: 100%;
   border-bottom: solid 1px #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.App-header h2 {
+  border-bottom: solid 1px #fff;
+}
+
+.App-header p {
+  width: 70%;
 }
 
 .App-link {
@@ -67,8 +78,8 @@ table td, table th {
 }
 
 .contents {
-  margin: 0px 0px 0px 100px;
-  width: 100%+50px;
+  margin: 0px 50px;
+  width: 100%-100px;
   text-align: left;
   overflow: auto;
 }
@@ -89,6 +100,39 @@ dl.contents dt {
 }
 dl.contents dd {
   width: 75%;
+}
+
+.box {
+  position: relative;
+  margin: 2em 50px;
+  padding: 0.5em 1em;
+  border: solid 3px #95ccff;
+  border-radius: 8px;
+}
+
+.box h2 {
+  color: #95ccff;
+  border-bottom: solid 3px #95ccff;
+}
+
+.box h3 {
+  text-decoration: underline;
+}
+
+.box .contents {
+  margin: 0px 10%;
+  width: 80%;
+  text-align: left;
+  overflow: auto;
+}
+
+.App-header img.phone {
+  width: 27%;
+  display: inline-flex;
+}
+
+.App-header img {
+  width: 40%;
 }
 
 #nav {
