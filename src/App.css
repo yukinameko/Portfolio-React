@@ -34,7 +34,7 @@
   width: 100%;
   border-bottom: solid 1px #fff;
   background-color: transparent;
-  color: #fff;
+  color: #C4C4FF;
 }
 
 .App-header h2 {
@@ -126,13 +126,15 @@ dl.contents dd {
   overflow: auto;
 }
 
-.App-header img.phone {
+.App-header .images img.phone {
+  margin: 1% 1%;
   width: 27%;
   display: inline-flex;
 }
 
-.App-header img {
-  width: 40%;
+.App-header .images img {
+  margin: 1% 1%;
+  width: 45%;
 }
 
 #nav {

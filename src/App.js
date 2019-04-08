@@ -5,48 +5,55 @@ import './App.css';
 import nameko from './data/image/icon/nameko.png';
 import Particles from 'react-particles-js';
 
+const imgEzuka1 = require('./data/image/work/e-zuka.png');
+const imgEzuka2 = require('./data/image/work/e-zuka-ai.png');
+const imgEzuka3 = require('./data/image/work/e-zuka-error.png');
+const imgIchannel1 = require('./data/image/work/i-channel.png');
+const imgIchannel2 = require('./data/image/work/iOZ.png');
+const imgFoT = require('./data/image/work/FOT.JPG');
+const imgIoT1 = require('./data/image/work/IoT.JPG');
+const imgIoT2 = require('./data/image/work/IoTSystemMap.jpeg');
+const imgSche = require('./data/image/work/sche.png');
+
 const internTitle = require('./data/intern/title.json');
 const internData = require('./data/intern/data.json');
 const skillTitle = require('./data/skill/title.json');
 const skillData = require('./data/skill/data.json');
 
 const particlesParam = {
-      "particles": {
-          "number": {
-              "value": 100,
-              "density": {
-                  "enable": false
-              }
-          },
-          "size": {
-              "value": 10,
-              "random": true
-          },
-          "move": {
-              "direction": "bottom",
-              "out_mode": "out"
-          },
-          "line_linked": {
-              "enable": false
-          },
-          // "color": {
-          //   "value":"#000000"
-          // }
-      },
-      "interactivity": {
-          "events": {
-              "onclick": {
-                  "enable": true,
-                  "mode": "remove"
-              }
-          },
-          "modes": {
-              "remove": {
-                  "particles_nb": 10
-              }
-          }
+  "particles": {
+    "number": {
+      "value": 100,
+      "density": {
+        "enable": false
       }
-  };
+    },
+    "size": {
+      "value": 10,
+      "random": true
+    },
+    "move": {
+      "direction": "bottom",
+      "out_mode": "out"
+    },
+    "line_linked": {
+      "enable": false
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onclick": {
+        "enable": true,
+        "mode": "remove"
+      }
+    },
+    "modes": {
+      "remove": {
+        "particles_nb": 10
+      }
+    }
+  }
+};
 
 const CreateTable = (props) => {
   return (
@@ -62,6 +69,20 @@ const CreateTable = (props) => {
           </tr>))
       }
     </table>
+    );
+}
+
+const Image = (props) => {
+  return (
+    <div className="images">
+    {
+      props.className ? props.item.map(v => {
+        return (<img src={v} className={props.className}/>);
+      }) : props.item.map(v => {
+        return (<img src={v}/>);
+      })
+    }
+    </div>
     );
 }
 
@@ -118,11 +139,7 @@ class App extends Component {
                     また，過去数週間分の見積もり誤差の平均を確認することができ，全体的に自分がどの程度ずれて見積もっているのか，どの程度改善されているのかを知ることができる．<br/>
                     時間の見積もりが甘く予定通りにことを進めるのが苦手な人が多いのをなんとかしたいといった考えが出発点．
                   </p>
-                  <div className="images">
-                    <img src={require('./data/image/work/e-zuka.png')} className="phone"/>
-                    <img src={require('./data/image/work/e-zuka-ai.png')} className="phone"/>
-                    <img src={require('./data/image/work/e-zuka-error.png')} className="phone"/>
-                  </div>
+                  <Image className="phone" item={[imgEzuka1, imgEzuka2, imgEzuka3]} />
                 <h3>開発詳細</h3>
                   <p className="contents">
                     主に操作画面作成と学習・予測モデルの作成部分に分かれ，分担作業を行なった．<br/>
@@ -150,10 +167,7 @@ class App extends Component {
                     <li>質問・回答の検索</li>
                     <li>3D空間内の自由な移動とチャットによる会話</li>
                   </ul>
-                  <div className="images">
-                    <img src={require('./data/image/work/i-channel.png')}/>
-                    <img src={require('./data/image/work/iOZ.png')}/>
-                  </div>
+                  <Image item={[imgIchannel1, imgIchannel2]} />
                 <h3>開発詳細</h3>
                   <p className="contents">
                   クラスのほぼ全員が利用していたTwitterのリストを参照することでログイン機能を実装し，外部からのログインを防いだ．<br/>
@@ -180,9 +194,7 @@ class App extends Component {
                     落ちているものや施設内の機器を組み合わせて任意の現象を起こして敵を倒す(やり過ごす)ことで施設からの脱出を目指すFPSゲーム．
                     「周りにあるものを組み合わせて目的を達成する」「目的を達成するに至る方法が1つに限定されない」といったゲームを作成したいという考えが出発点．
                   </p>
-                  <div className="images">
-                    <img src={require('./data/image/work/FOT.JPG')}/>
-                  </div>
+                  <Image item={[imgFoT]} />
                 <h3>開発詳細</h3>
                   <p className="contents">
                     ものを拾う・使う・組み合わせる等の動作や，敵の挙動・操作キャラの発見に至るアルゴリズムなどを，Unityの当たり判定をうまく利用することで全て自作した．また，オブジェクト指向プログラミングを意識し，クラス継承などを効果的に用いることで，基本的な機能はそのままに，特定の組み合わせでのみ現象が起こるように実装を行なった．<br/>
@@ -240,12 +252,13 @@ class App extends Component {
             </div>
 
             <div className="box">
-              <h2 className="del" id="iot">サーモカメラ搭載型IoTシステム(プロトタイプ)</h2>
+              <h2 className="del" id="iot">サーモカメラ搭載型IoTシステム</h2>
                 <h3>概要</h3>
                   <p className="contents">
                     サーモカメラを搭載した安価かつ小型のIoTシステム．<br/>
                     「汎用性の高いサーモカメラは大型かつ高価なため，簡単な実験やそれほどの性能を必要とはしないシステムへの搭載には不向きである」といった考えが出発点．
                   </p>
+                  <Image item={[imgIoT1, imgIoT2]} />
                 <h3>開発詳細</h3>
                   <p className="contents">
                     SDKが公開されているUSB接続で動く小型のサーモカメラをRaspberry Piに接続することによって遠隔からの操作を可能にした．<br/>
@@ -271,9 +284,7 @@ class App extends Component {
                     ユーザが入力する際に，各日付の参加が可能な時間の範囲を指定して日程の調整が行われる．参加者最大かつ開催時間が最大となるように日程の候補が算出される．<br/>
                     時間の指定は，可能な時間の始点と終点をクリックorタップすることによって行い，中抜けする場合の調整も可能．
                   </p>
-                  <div className="images">
-                    <img src={require('./data/image/work/sche.png')}/>
-                  </div>
+                  <Image item={[imgSche]} />
                 <h3>開発詳細</h3>
                   <p className="contents">
                     少しでも入力の手間や誤操作を減らし，クロスプラットフォームを目指すために時間の始点・終点での入力方法を考案した．<br/>
