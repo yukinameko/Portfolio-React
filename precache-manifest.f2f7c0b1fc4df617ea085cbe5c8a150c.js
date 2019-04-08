@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a85a5c42354818733502",
-    "url": "/Portfolio-React/static/css/main.1d0c354d.chunk.css"
+    "revision": "5d85face269508fe4259",
+    "url": "/Portfolio-React/static/css/main.8d87927f.chunk.css"
   },
   {
-    "revision": "a85a5c42354818733502",
-    "url": "/Portfolio-React/static/js/main.c2629621.chunk.js"
+    "revision": "5d85face269508fe4259",
+    "url": "/Portfolio-React/static/js/main.f1fa6958.chunk.js"
   },
   {
     "revision": "6ec9d2a1e41c6e5bfb44",
@@ -48,11 +48,19 @@ self.__precacheManifest = [
     "url": "/Portfolio-React/static/media/FOT.400f1652.JPG"
   },
   {
+    "revision": "763d19946c4fb7e86e8010516987bbda",
+    "url": "/Portfolio-React/static/media/IoT.763d1994.JPG"
+  },
+  {
+    "revision": "e58d38f75f0c6f9f6591be9f80b8061d",
+    "url": "/Portfolio-React/static/media/IoTSystemMap.e58d38f7.jpeg"
+  },
+  {
     "revision": "2da55941454760cc2c96f38dee2e751e",
     "url": "/Portfolio-React/static/media/sche.2da55941.png"
   },
   {
-    "revision": "06e164493a42f62fdfc4648fc18635b5",
+    "revision": "5bf8c20de9fa2f0a9b2f816f2811116c",
     "url": "/Portfolio-React/index.html"
   }
 ];
