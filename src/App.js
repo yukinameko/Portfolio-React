@@ -95,7 +95,7 @@ class App extends Component {
           <li><a href="#intro">Profile</a></li>
           <li><a href="#history">History</a></li>
           <li><a href="#skill">Skill</a></li>
-          <li><a href="#del">Work</a></li>
+          <li><a href="#del">Works</a></li>
         </ul>
         <header className="App-header">
           <div className="Background-App-logo">
@@ -117,7 +117,7 @@ class App extends Component {
               </dl>
             <h2>Internship</h2>
               <CreateTable title={internTitle} data={internData}/>
-            <h2>Award</h2>
+            <h2>Awards</h2>
               <ul>
                 <li>第3回学生スマートフォンアプリコンテスト<br/>プレゼンテーション賞</li>
                 <li>e-ZUKA スマートフォンアプリコンテスト 2018<br/>ヌーラボ賞・福岡県済生会飯塚嘉穂病院賞</li>
@@ -127,7 +127,7 @@ class App extends Component {
             2019年4月現在
             <CreateTable title={skillTitle} data={skillData}/>
             
-          <h1 id="del">Work</h1>
+          <h1 id="del">Works</h1>
             <div className="box">
               <h2 className="del" id="e-zuka">体外式時間感覚補正器(iOSアプリ)</h2>
                 <h3>概要</h3>
@@ -298,6 +298,12 @@ class App extends Component {
                     macOSのGoogle Chrome上で動くように実装し，開発には主にjQueryを用いた．
                   </p>
             </div>
+
+            <footer id="footer">
+              <p id id="copyright">
+                <small>© 2019 Yoshiki Daimon</small>
+              </p>
+            </footer>
         </header>
       </div>
     );

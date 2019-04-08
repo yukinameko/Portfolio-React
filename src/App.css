@@ -124,6 +124,7 @@ dl.contents dd {
   width: 80%;
   text-align: left;
   overflow: auto;
+  font-size: calc(10px + 1.5vmin);
 }
 
 .App-header .images img.phone {
@@ -178,4 +179,18 @@ dl.contents dd {
 
 #nav li:hover{
   background-color: #666666;
+}
+
+#footer {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  background: #384150;
+  bottom: 0;
+}
+
+#copyright {
+  font-size: 14px;
+  width: 100%;
 }

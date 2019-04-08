@@ -26,7 +26,7 @@
 	{
 		"言語":"Python",
 		"学習期間":"3年",
-		"用途":"数値解析\n画像処理\n機械学習\nDeep Learning\n",
+		"用途":"数値解析\n画像処理\n機械学習\nDeep Learning",
 		"ライブラリ等":"matplotlib\nopencv\nChainer\ntensorflow等"
 	},
 	{
